@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    imagename = "harishdonepudi/requirements"
+    imagename = "harishdonepudi/requirementsc"
     registryCredential = 'DockerCredentials'
     dockerImage = ''
   }
@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/harishdonepudi/Rek3', branch: 'master'])
+        git([url: 'https://github.com/harishdonepudi/Requirements3', branch: 'master'])
 
       }
     }
